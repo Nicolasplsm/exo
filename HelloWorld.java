@@ -3,15 +3,16 @@ import javax.swing.*;
 public class HelloWorld {
     public static void main(String[] args) {
         // Création de la fenêtre
-        JFrame frame = new JFrame("Hello World");
+        JFrame frame = new JFrame(Constantes.HELLO_WORLD_TITLE);
         frame.setSize(200, 200);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         // Création du label
-        JLabel label = new JLabel("Hello World", SwingConstants.CENTER);
+        JLabel label = new JLabel(Constantes.HELLO_WORLD_TEXT, SwingConstants.CENTER);
 
         // Ajout du label à la fenêtre
         frame.add(label);
         frame.setVisible(true);
     }
 }
+
